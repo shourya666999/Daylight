@@ -26,6 +26,32 @@ Most people do not need another complicated system. They need one reliable place
 
 Daylight pairs a quiet, premium glass look with animated surfaces and a focused layout. The interface is designed to make useful information easy to scan without turning personal planning into a wall of charts.
 
+## Screenshots
+
+### Insights
+
+See daily, monthly, and yearly progress across tasks, habits, workouts, focus time, and money.
+
+<p align="center">
+  <img src="docs/screenshots/insights.png" alt="Daylight Insights dashboard showing task, habit, workout, focus, and money summaries" width="1000">
+</p>
+
+### Money
+
+Track income, spending, net cash flow, and recurring subscriptions. INR is shown as the default currency.
+
+<p align="center">
+  <img src="docs/screenshots/money.png" alt="Daylight Money dashboard with rupee currency, income, expenses, and subscriptions" width="1000">
+</p>
+
+### Pomodoro
+
+Set focus and break lengths, connect a timer to a task, and review completed sessions.
+
+<p align="center">
+  <img src="docs/screenshots/pomodoro.png" alt="Daylight Pomodoro timer with configurable focus and break lengths" width="1000">
+</p>
+
 ## Your data stays on your computer
 
 Daylight runs a small server bound to your own computer and stores information in a local SQLite database. It does not require an account, contact a hosted service, or send your records to a cloud provider. Clicking **Local storage** in the sidebar opens the folder containing the database.
