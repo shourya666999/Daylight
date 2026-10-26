@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101722">
+  <title>Daylight — Personal tracker</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <aside class="sidebar glass" id="sidebar">
+      <div class="brand"><div class="brand-mark">✦</div><div><strong id="brand-name">Daylight</strong><span>your life, in rhythm</span></div><button class="icon-button sidebar-toggle" id="sidebar-toggle" aria-label="Collapse sidebar">‹</button></div>
+      <button class="capture-button" id="quick-capture"><span class="capture-plus">＋</span><span>Quick capture</span><kbd>Ctrl ⇧ Space</kbd></button>
+      <div class="side-label">Workspace</div>
+      <nav class="nav-list" id="main-nav"></nav>
+      <div class="sidebar-bottom">
+        <button class="backup-mini" id="open-storage" type="button" aria-label="Open the local database file location" title="Open the folder containing tracker.sqlite"><span class="status-dot"></span><span class="storage-copy"><b>Local storage</b><small id="backup-mini-label">Saved on this laptop</small></span></button>
+        <button class="nav-item settings-link" data-view="settings"><span class="nav-icon">⚙</span><span>Settings</span></button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu icon-button" id="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumbs"><span>Workspace</span><i>/</i><strong id="current-section">Today</strong></div>
+        <div class="top-actions">
+          <label class="search-box"><span>⌕</span><input id="global-search" placeholder="Search notes and everything…" autocomplete="off"><kbd>⌘ K</kbd></label>
+        </div>
+      </header>
+      <section class="content" id="view-root"></section>
+      <footer class="footer"><span>Made for your everyday momentum</span><span id="local-status"><i class="status-dot"></i> Saved locally</span></footer>
+    </main>
+  </div>
+  <div class="toast-region" id="toasts" aria-live="polite"></div>
+  <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal glass" id="modal" role="dialog" aria-modal="true"></section></div>
+  <script src="/app.js"></script>
+</body>
+</html>

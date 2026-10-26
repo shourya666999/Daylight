@@ -1,0 +1,29 @@
+# Local runtime data and backups
+data/
+local-data/
+backups/
+exports/
+*.csv
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+server-url.txt
+server-output.log
+server-error.log
+*.log
+
+# Secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+
+# Operating system files
+.DS_Store
+Thumbs.db
